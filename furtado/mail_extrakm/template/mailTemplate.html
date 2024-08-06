@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" style="font-family: Rubik, sans-serif">
+      <h4
+        class="card-title"
+        style="
+          margin: 0;
+          text-align: center;
+          font-weight: bold;
+          padding-bottom: 20px;
+        "
+      >
+        Cartão {{id}}
+      </h4>
+      <table
+        style="
+          width: 100%;
+          max-width: 396px;
+          margin: 0 auto;
+          overflow: hidden;
+          border-style: dashed;
+          border-width: 1px;
+          border-color: rgba(0, 0, 0, 0.32);
+          padding: 24px 32px;
+        "
+      >
+        <tr>
+          <td style="padding: 8px 0">
+            <p
+              style="margin: 0; text-align: left; font-size: 14px; opacity: 64%"
+            >
+              Viagem
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: left;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{id}}
+            </p>
+          </td>
+          <td style="padding: 8px 0">
+            <p
+              style="
+                margin: 0;
+                text-align: right;
+                font-size: 14px;
+                opacity: 64%;
+              "
+            >
+              Data
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: right;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{data_hora}}
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding: 8px 0">
+            <p
+              style="margin: 0; text-align: left; font-size: 14px; opacity: 64%"
+            >
+              Rota
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                color: #000000;
+                font-weight: bold;
+                text-align: left;
+                opacity: 88%;
+              "
+            >
+              {{rota}}
+            </p>
+            <p style="margin: 0; font-size: 16px; opacity: 80%">{{hora}}</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 0; white-space: nowrap">
+            <p
+              style="margin: 0; text-align: left; font-size: 14px; opacity: 64%"
+            >
+              Motorista
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: left;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{motorista}}
+            </p>
+          </td>
+          <td style="padding: 8px 0">
+            <p
+              style="
+                margin: 0;
+                text-align: right;
+                font-size: 14px;
+                opacity: 64%;
+              "
+            >
+              Produtores
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: right;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{n_produtores}}
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 0">
+            <p
+              style="margin: 0; text-align: left; font-size: 14px; opacity: 64%"
+            >
+              Placa
+            </p>
+            <p
+              style="
+                margin: 0;
+                background-color: rgba(73, 94, 212, 1);
+                border-radius: 8px;
+                padding: 4px 8px;
+                color: white;
+                font-size: 16px;
+                text-align: center;
+                opacity: 88%;
+                font-weight: bold;
+                width: 64%;
+              "
+            >
+              {{placa}}
+            </p>
+          </td>
+          <td style="padding: 8px 0">
+            <p
+              style="
+                margin: 0;
+                text-align: right;
+                font-size: 14px;
+                opacity: 64%;
+              "
+            >
+              Litragem
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: right;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{litros_leite}}
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 0">
+            <p
+              style="margin: 0; text-align: left; font-size: 14px; opacity: 64%"
+            >
+              KM Chegada
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: left;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{km_chegada}}
+            </p>
+          </td>
+          <td style="padding: 8px 0">
+            <p
+              style="
+                margin: 0;
+                text-align: right;
+                font-size: 14px;
+                opacity: 64%;
+              "
+            >
+              Diferença
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: right;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{dif}}
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 0">
+            <p
+              style="margin: 0; text-align: left; font-size: 14px; opacity: 64%"
+            >
+              KM Rodado
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: left;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{km_rodado}}
+            </p>
+          </td>
+          <td style="padding: 8px 0; white-space: nowrap">
+            <p
+              style="
+                margin: 0;
+                text-align: right;
+                font-size: 14px;
+                opacity: 64%;
+              "
+            >
+              Acompanhante
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: right;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{acompanhante}}
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 8px 0">
+            <p
+              style="margin: 0; text-align: left; font-size: 14px; opacity: 64%"
+            >
+              KM Extra
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: left;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{km_extra}}
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="padding: 8px 0">
+            <p
+              style="margin: 0; text-align: left; font-size: 14px; opacity: 64%"
+            >
+              Motivo
+            </p>
+            <p
+              style="
+                margin: 0;
+                font-size: 16px;
+                text-align: left;
+                opacity: 88%;
+                color: #000000;
+                font-weight: bold;
+              "
+            >
+              {{motivo_km_extra}}
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p
+        class="footer"
+        style="
+          margin: 0;
+          text-align: center;
+          font-size: 12px;
+          opacity: 64%;
+          padding-top: 20px;
+        "
+      >
+        Desenvolvido por SysWest
+      </p>
+      <p
+        class="footer"
+        style="
+          margin: 0;
+          text-align: center;
+          font-size: 12px;
+          opacity: 64%;
+          padding-top: 8px;
+        "
+      >
+        Qualquer problema responda a este e-mail
+      </p>
+    </div>
+  </body>
+</html>
